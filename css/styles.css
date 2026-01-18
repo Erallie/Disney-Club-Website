@@ -34,6 +34,14 @@ body{
   overflow-x:hidden;
 }
 
+a {
+    color: #7176ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 /* Subtle diamond pattern */
 .pattern{
   position:fixed; inset:0;
