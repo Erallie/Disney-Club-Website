@@ -3,7 +3,7 @@ const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 
 // ---------- Copy tag ----------
-const TAG = "DISNEY.3803";
+/* const TAG = "DISNEY.3803";
 const toast = $("#toast");
 
 async function copyText(text){
@@ -28,9 +28,9 @@ function showToast(msg){
   toast.style.opacity = "1";
   clearTimeout(toastTimer);
   toastTimer = setTimeout(()=>{ toast.style.opacity="0"; }, 2200);
-}
+} */
 
-$("#copyTag").addEventListener("click", ()=>copyText(TAG));
+// $("#copyTag").addEventListener("click", ()=>copyText(TAG));
 
 // ---------- Fake lively counters (subtle, optional) ----------
 /* const onlineNow = $("#onlineNow");
