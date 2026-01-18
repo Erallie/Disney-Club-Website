@@ -551,6 +551,14 @@ iframe {
 }
 
 /* Responsive */
+@media (max-width: 1000px) {
+    .hero, .heroInner {
+        min-height: initial;
+    }
+    .title-background {
+        background: none;
+    }
+}
 @media (max-width: 920px){
   .grid{grid-template-columns: 1fr}
   .events{grid-template-columns: 1fr}
