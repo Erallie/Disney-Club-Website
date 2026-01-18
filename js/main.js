@@ -33,7 +33,7 @@ function showToast(msg){
 $("#copyTag").addEventListener("click", ()=>copyText(TAG));
 
 // ---------- Fake lively counters (subtle, optional) ----------
-const onlineNow = $("#onlineNow");
+/* const onlineNow = $("#onlineNow");
 const members = $("#members");
 
 function wiggleCounters(){
@@ -47,7 +47,7 @@ function wiggleCounters(){
   members.textContent = Math.max(0, m);
 }
 wiggleCounters();
-setInterval(wiggleCounters, 6000);
+setInterval(wiggleCounters, 6000); */
 
 
 // ---------- Party theme generator ----------
