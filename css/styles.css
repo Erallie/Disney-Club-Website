@@ -263,7 +263,7 @@ section {
   box-shadow: 0 18px 45px rgba(0,0,0,.40);
   overflow:hidden;
   position:relative;
-  max-height: 520px;
+  /* max-height: 520px; */
   overflow-y: auto;
 }
 /* #rulesTitle {
@@ -300,12 +300,22 @@ section {
 }
 
 .callouts{
-  display: flex;
-	justify-content: center; /* horizontal */
-	align-items: center;     /* vertical */
   grid-template-columns: repeat(3, minmax(0,1fr));
   gap:10px;
   margin-top: 14px;
+}
+.center-iframe {
+    
+  display: flex;
+	justify-content: center; /* horizontal */
+	align-items: center;     /* vertical */
+}
+
+.upcoming-event-image {
+    max-width: 100%;
+    width: 600px;
+    border-radius: 16px;
+    margin: 18px;
 }
 .call{
   padding: 12px 12px;
@@ -325,6 +335,13 @@ section {
   border-radius: 18px;
   border:1px solid rgba(255,255,255,.10);
   background: rgba(5,8,18,.35);
+  margin: 14px 0;
+  &:last-child {
+    margin: 14px 0 0;
+  }
+  &:first-child {
+    margin: 0 0 14px;
+  }
 }
 .stat .label{color: var(--muted); font-size: 13px}
 .stat .value{
@@ -347,13 +364,13 @@ section {
   gap:12px;
 }
 .event{
-  padding: 14px 14px;
+  padding: 0;
   border-radius: 18px;
   border:1px solid rgba(255,255,255,.10);
   background: rgba(5,8,18,.35);
   transition:.18s ease;
 }
-.event:hover{transform: translateY(-2px); background: rgba(255,255,255,.06)}
+/* .event:hover{transform: translateY(-2px); background: rgba(255,255,255,.06)}
 .event .tag{
   display:inline-flex;
   align-items:center;
@@ -366,9 +383,11 @@ section {
   color: rgba(234,242,255,.88);
   margin-bottom: 10px;
   width:fit-content;
-}
+} */
 .event h3{margin:0 0 6px 0; font-size: 16px}
-.event p{margin:0; color: var(--muted); font-size: 13px; line-height:1.5}
+.event p{
+    margin:14px; color: rgba(234,242,255,.86); font-size: 16px; line-height:1.5
+}
 
 /* Royal court */
 .court{

@@ -81,7 +81,7 @@ $$("[data-link]").forEach(a=>{
   });
 });
 
-const sections = ["#overview","#events","#expectations","#gallery","#join"].map(id=>$(id));
+const sections = ["#overview","#event","#expectations","#rules","#gallery","#join"].map(id=>$(id));
 const navLinks = $$("[data-link]");
 
 const io = new IntersectionObserver((entries)=>{
