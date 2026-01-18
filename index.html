@@ -1,264 +1,276 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>The Disney Club</title>
-  <meta name="description" content="Lavish parties, beautiful music, breathtaking performances — and a new King & Queen every time. Experience some Disney Magic!" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>The Disney Club</title>
+<meta name="description" content="Lavish parties, beautiful music, breathtaking performances — and a new King & Queen every time. Experience some Disney Magic!" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Great+Vibes&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Great+Vibes&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+<!-- CSS -->
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <canvas id="sparkles"></canvas>
-  <div class="pattern"></div>
+<canvas id="sparkles"></canvas>
+<div class="pattern"></div>
 
-  <div class="wrap">
+<div class="wrap">
     <!-- HERO -->
     <header class="hero" id="top" aria-label="The Disney Club">
-      <div class="heroInner">
-          <div class="title-background">
+    <div class="heroInner">
+        <div class="title-background">
             <img class="title" src="files/Disney Text.webp" alt="The Disney Club">
-          </div>
+        </div>
 
-          <div class="metaRow" role="group" aria-label="Group info">
+        <div class="metaRow" role="group" aria-label="Group info">
             <span class="pill"><span class="dot" aria-hidden="true"></span>Online now: <b id="onlineNow">133</b></span>
             <span class="pill mini" title="Members">
-              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 11c1.657 0 3-1.567 3-3.5S17.657 4 16 4s-3 1.567-3 3.5S14.343 11 16 11ZM8 11c1.657 0 3-1.567 3-3.5S9.657 4 8 4 5 5.567 5 7.5 6.343 11 8 11Zm8 2c-1.837 0-5 1.003-5 3v2h10v-2c0-1.997-3.163-3-5-3ZM8 13c-2.206 0-6 1.163-6 3.5V18h7v-2c0-1.04.412-1.962 1.126-2.67C9.401 13.127 8.707 13 8 13Z" fill="rgba(234,242,255,.92)"/></svg>
-              Members: <b id="members">2657</b>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M16 11c1.657 0 3-1.567 3-3.5S17.657 4 16 4s-3 1.567-3 3.5S14.343 11 16 11ZM8 11c1.657 0 3-1.567 3-3.5S9.657 4 8 4 5 5.567 5 7.5 6.343 11 8 11Zm8 2c-1.837 0-5 1.003-5 3v2h10v-2c0-1.997-3.163-3-5-3ZM8 13c-2.206 0-6 1.163-6 3.5V18h7v-2c0-1.04.412-1.962 1.126-2.67C9.401 13.127 8.707 13 8 13Z" fill="rgba(234,242,255,.92)"/></svg>
+            Members: <b id="members">2657</b>
             </span>
 
             <span class="pill copy" id="copyTag" title="Click to copy the group tag">
-              <span class="k">DISNEY.3803</span>
-              <span class="hint">⧉ copy</span>
+            <span class="k">DISNEY.3803</span>
+            <span class="hint">⧉ copy</span>
             </span>
         </div>
-      </div>
+    </div>
     </header>
 
     <!-- NAV -->
     <nav class="nav" aria-label="Site navigation">
-      <ul>
+    <ul>
         <li><a class="active" href="#overview" data-link><span aria-hidden="true">💠</span> Overview</a></li>
         <li><a href="#events" data-link><span aria-hidden="true">🎭</span> Events</a></li>
-        <li><a href="#royalty" data-link><span aria-hidden="true">👑</span> Royal Court</a></li>
+        <li><a href="#expectations" data-link><span aria-hidden="true">👑</span> What to Expect</a></li>
         <li><a href="#gallery" data-link><span aria-hidden="true">🪄</span> Gallery</a></li>
         <li><a href="#join" data-link><span aria-hidden="true">✨</span> Join</a></li>
-      </ul>
+    </ul>
     </nav>
 
     <!-- OVERVIEW -->
     <section id="overview" class="grid" aria-label="Overview">
-      <article class="card">
+    <article class="card">
         <div class="cardPad">
-          <h2 class="h2">Welcome to the Castle</h2>
-          <p class="lead">
+        <h2 class="h2">Welcome to the Ballroom</h2>
+        <p class="lead">
             <b>The Disney Club</b> is where we hang out and lose glass slippers which nobody can find.
             Join us for lavish parties with beautiful music, breathtaking performances, and a new
-            <b>King & Queen</b> announced each time. Get ready to experience some <b>Disney Magic!</b>
-          </p>
+            <b>King and Queen</b> announced each time. Get ready to experience some <b>Disney Magic!</b>
+        </p>
 
-          <div class="divider"></div>
+        <div class="divider"></div>
 
-          <div class="callouts" role="list">
-            <div class="call" role="listitem">
-              <b>Lavish Parties</b>
-              <span>Ballroom vibes, soft lighting, and a “main character moment” for everyone.</span>
-            </div>
-            <div class="call" role="listitem">
-              <b>Performances</b>
-              <span>Live acts, themed showcases, and the occasional dramatic entrance.</span>
-            </div>
-            <div class="call" role="listitem">
-              <b>Royal Announcements</b>
-              <span>Each event crowns a new King & Queen. Titles are earned with style.</span>
-            </div>
-          </div>
+        <div class="callouts" role="list">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2z_1kXLcG7s?si=2rS4j-4NdhRPQrbL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
-      </article>
+        </div>
+    </article>
 
-      <aside class="card">
+    <aside class="card">
         <div class="cardPad sideStat">
-          <div class="stat">
-            <div class="label">Lost Glass Slippers (unfound)</div>
-            <div class="value"><span class="glow" id="slippers">42</span> 👠</div>
-            <div class="tiny">Rumor says they vanish during the final song. Nobody remembers why.</div>
-          </div>
-
-          <div class="stat">
-            <div class="label">Tonight’s Mood</div>
-            <div class="value"><span class="glow" id="mood">Lavish</span> ✨</div>
-            <div class="tiny">Dress code: elegant, enchanted, or “accidentally royal.”</div>
-          </div>
-
-          <div class="stat">
-            <div class="label">Quick Rules</div>
-            <div class="tiny">
-              Be kind. Hype people up. Respect boundaries. If someone drops a slipper, do not start a stampede.
+            <h2 class="h2" id="rulesTitle">📜 Event Rules</h2>
+            <div class="stat">
+                <div class="value">1. Be Kind and Respectful</div>
+                <div class="tiny">Treat all members and staff with respect‚ and don't be a nuisance. This means no spamming‚ no trolling⁄flaming‚ no harassment‚ no blackmailing‚ no hateful comments or insults, and basically anything that is intended to hurt another person in any way, whether emotionally, mentally, or physically. In short: be a decent person.</div>
             </div>
-          </div>
+
+            <div class="stat">
+                <div class="value">2. No NSFW</div>
+                <div class="tiny">Just like the Disney films, this place is PG-13. Please keep all 18+ content in private lobbies and out of group instances.</div>
+            </div>
+
+            <div class="stat">
+                <div class="value">3. Avoid Annoying Avatar Features</div>
+                <div class="tiny">
+                Refrain from using avatar features that may be a nuisance to others at the event, such as shaders that mess with people's vision and animations that take up a lot of room or affect world lighting. Even people far away can usually experience these features, and it may prove annoying to those who are trying to have a conversation at a distance. We ask that you keep usage of these features to a minimum.
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="value">4. Use Optimized Avatars <em>When Possible</em></div>
+                <div class="tiny">
+                This place gets packed really quickly, so for the courtesy of both yourselves and everyone else in the room, try to use optimized avatars <strong>if you are able to</strong>. It is understandable if you are unable to find any appropriate avatars that have a rating better than Very Poor. All we ask is that you consider performance when you choose an avatar.
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="value">5. Don't Forget to Have Fun!</div>
+                <div class="tiny">
+                    We're all here to have a good time. If for any reason, you find that doing what you're doing isn't fun and happy, take a break. Do something else for a bit. You can always come back when things are better.
+                </div>
+            </div>
         </div>
-      </aside>
+    </aside>
     </section>
 
     <!-- EVENTS -->
     <section id="events" aria-label="Events">
-      <div class="card">
+    <div class="card">
         <div class="cardPad">
-          <h2 class="h2">Events & Nights at the Club</h2>
-          <p class="lead">A few signature party types — swap themes as you like.</p>
+        <h2 class="h2">Events & Nights at the Club</h2>
+        <p class="lead">A few signature party types — swap themes as you like.</p>
 
-          <div class="events">
+        <div class="events">
             <div class="event">
-              <div class="tag">🎻 Waltz & Wonders</div>
-              <h3>Grand Ballroom Night</h3>
-              <p>Classic music, slow dances, and a final crescendo where slippers mysteriously go missing.</p>
+            <div class="tag">🎻 Waltz & Wonders</div>
+            <h3>Grand Ballroom Night</h3>
+            <p>Classic music, slow dances, and a final crescendo where slippers mysteriously go missing.</p>
             </div>
 
             <div class="event">
-              <div class="tag">🎤 Spotlight Magic</div>
-              <h3>Performance Showcase</h3>
-              <p>Singing, dancing, acting — bring your best scene-stealer energy and cheer loudly for others.</p>
+            <div class="tag">🎤 Spotlight Magic</div>
+            <h3>Performance Showcase</h3>
+            <p>Singing, dancing, acting — bring your best scene-stealer energy and cheer loudly for others.</p>
             </div>
 
             <div class="event">
-              <div class="tag">👑 Crown Ceremony</div>
-              <h3>King & Queen Reveal</h3>
-              <p>At the end of each party, we crown royalty. Bonus points for elegance, kindness, and flair.</p>
+            <div class="tag">👑 Crown Ceremony</div>
+            <h3>King & Queen Reveal</h3>
+            <p>At the end of each party, we crown royalty. Bonus points for elegance, kindness, and flair.</p>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
     </section>
 
     <!-- ROYALTY -->
-    <section id="royalty" aria-label="Royal Court">
-      <div class="card">
+    <section id="expectations" aria-label="Royal Court">
+    <div class="card">
         <div class="cardPad">
-          <h2 class="h2">Royal Court Traditions</h2>
-          <p class="lead">
-            Titles rotate every event — it’s less about “winning” and more about celebrating a night you’ll remember.
-          </p>
+        <h2 class="h2">What to Expect</h2>
+        <p class="lead">
+            Each ball has a magical atmosphere for everyone to enjoy!
+        </p>
 
-          <div class="court">
+        <div class="court">
+
             <div class="crown">
-              <div class="ico" aria-hidden="true">👑</div>
-              <div>
-                <b>How Royalty is Chosen</b>
-                <span>By vibes: kindness, style, showmanship, and who made the room feel magical.</span>
-              </div>
+            <div class="ico" aria-hidden="true">🎶</div>
+            <div>
+                <b>Music & Dancing</b>
+                <span>Beautiful music to dance to all night DJ'ed live — from high-energy danceable Disney hits to slow and passionate romantic waltzes.</span>
+            </div>
             </div>
 
             <div class="crown">
-              <div class="ico" aria-hidden="true">🕯️</div>
-              <div>
-                <b>Lavish Party Etiquette</b>
-                <span>Compliments are currency. Invite shy guests to dance. Never interrupt a performance.</span>
-              </div>
+            <div class="ico" aria-hidden="true">🎭</div>
+            <div>
+                <b>Live Performances</b>
+                <span>Scattered throughout the night are live music and dance performances by friends of the ballroom and <a href="https://music.gozarproductions.com/performances" target="_blank">Erika Gozar</a> herself!</span>
+            </div>
             </div>
 
             <div class="crown">
-              <div class="ico" aria-hidden="true">👠</div>
-              <div>
-                <b>The Glass Slipper Mystery</b>
-                <span>We “lose” them on purpose. Nobody admits it. The castle keeps its secrets.</span>
-              </div>
+            <div class="ico" aria-hidden="true">✨</div>
+            <div>
+                <b>Themed Avatars</b>
+                <span>Each event has a new theme! From royal sidekicks to flowers and nature to feathers and flight, come with a new avatar for each ball!</span>
+            </div>
+            </div>
+            
+            <div class="crown">
+            <div class="ico" aria-hidden="true">👑</div>
+            <div>
+                <b>King and Queen</b>
+                <span>Whoever is the most in the spirit of the night is crowned King and Queen of the Ball!</span>
+            </div>
             </div>
 
             <div class="crown">
-              <div class="ico" aria-hidden="true">🎶</div>
-              <div>
-                <b>Music & Atmosphere</b>
-                <span>Beautiful music all night — from dreamy waltzes to dramatic finale tracks.</span>
-              </div>
+            <div class="ico" aria-hidden="true">🔍</div>
+            <div>
+                <b>Scavenger Hunt</b>
+                <span>Find all 9 items scattered throughout the ballroom to unlock the magical experience.</span>
             </div>
-          </div>
+            </div>
+        </div>
 
-          <div class="cta" style="margin-top:14px">
+        <div class="cta" style="margin-top:14px">
             <button class="btn secondary" id="randomTheme">🎲 Generate a party theme</button>
             <span class="tiny" id="themeOut">Theme idea: <b>Moonlit Masquerade</b></span>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
     </section>
 
     <!-- GALLERY -->
     <section id="gallery" aria-label="Gallery">
-      <div class="card">
+    <div class="card">
         <div class="cardPad">
-          <h2 class="h2">Gallery of Enchanted Moments</h2>
-          <p class="lead">Click a tile to “open” it. Replace the images with your own screenshots anytime.</p>
+        <h2 class="h2">Gallery of Enchanted Moments</h2>
+        <p class="lead">Click a tile to “open” it. Replace the images with your own screenshots anytime.</p>
 
-          <div class="gallery">
+        <div class="gallery">
             <div class="tile" data-cap="Grand Entrance">
-              <img alt="Grand Entrance" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=70">
-              <div class="cap">Grand Entrance</div>
+            <img alt="Grand Entrance" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=900&q=70">
+            <div class="cap">Grand Entrance</div>
             </div>
             <div class="tile" data-cap="Ballroom Waltz">
-              <img alt="Ballroom Waltz" src="https://images.unsplash.com/photo-1521334726092-b509a19597c1?auto=format&fit=crop&w=900&q=70">
-              <div class="cap">Ballroom Waltz</div>
+            <img alt="Ballroom Waltz" src="https://images.unsplash.com/photo-1521334726092-b509a19597c1?auto=format&fit=crop&w=900&q=70">
+            <div class="cap">Ballroom Waltz</div>
             </div>
             <div class="tile" data-cap="Spotlight Performance">
-              <img alt="Spotlight Performance" src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=70">
-              <div class="cap">Spotlight Performance</div>
+            <img alt="Spotlight Performance" src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=900&q=70">
+            <div class="cap">Spotlight Performance</div>
             </div>
             <div class="tile" data-cap="Royal Ceremony">
-              <img alt="Royal Ceremony" src="https://images.unsplash.com/photo-1520975958221-55d0d0e7d59b?auto=format&fit=crop&w=900&q=70">
-              <div class="cap">Royal Ceremony</div>
+            <img alt="Royal Ceremony" src="https://images.unsplash.com/photo-1520975958221-55d0d0e7d59b?auto=format&fit=crop&w=900&q=70">
+            <div class="cap">Royal Ceremony</div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
     </section>
 
     <!-- JOIN -->
     <section id="join" aria-label="Join">
-      <div class="card">
+    <div class="card">
         <div class="cardPad">
-          <h2 class="h2">Join The Disney Club</h2>
-          <p class="lead">
+        <h2 class="h2">Join The Disney Club</h2>
+        <p class="lead">
             Ready for lavish parties, beautiful music, and unforgettable performances?
             Bring your best fit, your brightest smile, and maybe… a spare slipper.
-          </p>
+        </p>
 
-          <div class="divider"></div>
+        <div class="divider"></div>
 
-          <div class="cta">
+        <div class="cta">
             <a href="https://vrc.group/DISNEY.3803" target="_blank"><button class="btn secondary">Join Our Group</button></a>
             <a href="https://discord.gg/CRhYxCUZeC" target="_blank"><button class="btn" id="discord">Join Our Discord</button></a>
             <button class="btn secondary" id="scrollTop">⬆ Back to top</button>
             <span class="tiny" id="toast" aria-live="polite"></span>
-          </div>
-
-          <p class="tiny" style="margin-top:10px">
-            Tip: You can edit the banner and badge backgrounds by replacing the <code>url(...)</code> images in the CSS.
-          </p>
         </div>
-      </div>
 
-      <div class="footer">
+        <p class="tiny" style="margin-top:10px">
+            Tip: You can edit the banner and badge backgrounds by replacing the <code>url(...)</code> images in the CSS.
+        </p>
+        </div>
+    </div>
+
+    <div class="footer">
         © <span id="year"></span> The Disney Club — “Lose a slipper, gain a memory.”
-      </div>
+    </div>
     </section>
-  </div>
+</div>
 
-  <!-- Modal -->
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Gallery image">
+<!-- Modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Gallery image">
     <div class="modalBox">
-      <div class="modalTop">
+    <div class="modalTop">
         <b id="modalTitle">Gallery</b>
         <button class="x" id="closeModal" aria-label="Close">✕</button>
-      </div>
-      <div class="modalImg"><img id="modalImg" alt="" src=""></div>
     </div>
-  </div>
+    <div class="modalImg"><img id="modalImg" alt="" src=""></div>
+    </div>
+</div>
 
-  <script src="js/main.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

@@ -35,30 +35,20 @@ $("#copyTag").addEventListener("click", ()=>copyText(TAG));
 // ---------- Fake lively counters (subtle, optional) ----------
 const onlineNow = $("#onlineNow");
 const members = $("#members");
-const slippers = $("#slippers");
 
 function wiggleCounters(){
   const baseOnline = 133;
   const baseMembers = 2657;
-  const baseSlippers = 42;
 
   const o = baseOnline + Math.floor(Math.random()*6) - 2;   // small jitter
   const m = baseMembers + Math.floor(Math.random()*4) - 1;
-  const s = baseSlippers + Math.floor(Math.random()*3) - 1;
 
   onlineNow.textContent = Math.max(0, o);
   members.textContent = Math.max(0, m);
-  slippers.textContent = Math.max(0, s);
 }
 wiggleCounters();
 setInterval(wiggleCounters, 6000);
 
-// ---------- Mood rotator ----------
-const moods = ["Lavish", "Enchanted", "Moonlit", "Royal", "Sparkling", "Dramatic Finale"];
-const moodEl = $("#mood");
-setInterval(()=>{
-  moodEl.textContent = moods[Math.floor(Math.random()*moods.length)];
-}, 6500);
 
 // ---------- Party theme generator ----------
 const themes = [
@@ -91,7 +81,7 @@ $$("[data-link]").forEach(a=>{
   });
 });
 
-const sections = ["#overview","#events","#royalty","#gallery","#join"].map(id=>$(id));
+const sections = ["#overview","#events","#expectations","#gallery","#join"].map(id=>$(id));
 const navLinks = $$("[data-link]");
 
 const io = new IntersectionObserver((entries)=>{
