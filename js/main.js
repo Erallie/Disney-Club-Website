@@ -2,26 +2,6 @@
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 
-// ---------- Party theme generator ----------
-const themes = [
-  "Moonlit Masquerade",
-  "Crystal Ballroom Waltz",
-  "Enchanted Garden Gala",
-  "Midnight Carriage Parade",
-  "Royal Portrait Night",
-  "Starlit Castle Concert",
-  "Glass Slipper Hunt (Friendly)",
-  "Villain-to-Hero Redemption Ball",
-  "Dreamy Duet Showcase",
-  "Candlelit Coronation"
-];
-const themeOut = $("#themeOut");
-$("#randomTheme").addEventListener("click", ()=>{
-  const t = themes[Math.floor(Math.random()*themes.length)];
-  themeOut.innerHTML = `Theme idea: <b>${t}</b>`;
-  showToast("New theme conjured ✨");
-});
-
 // ---------- Smooth scroll / active nav ----------
 $$("[data-link]").forEach(a=>{
   a.addEventListener("click", (e)=>{
