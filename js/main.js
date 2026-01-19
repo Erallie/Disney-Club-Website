@@ -2,54 +2,6 @@
 const $ = (s, el=document) => el.querySelector(s);
 const $$ = (s, el=document) => [...el.querySelectorAll(s)];
 
-// ---------- Copy tag ----------
-/* const TAG = "DISNEY.3803";
-const toast = $("#toast");
-
-async function copyText(text){
-  try{
-    await navigator.clipboard.writeText(text);
-    showToast(`Copied: ${text}`);
-  }catch(e){
-    // fallback
-    const t = document.createElement("textarea");
-    t.value = text;
-    document.body.appendChild(t);
-    t.select();
-    document.execCommand("copy");
-    t.remove();
-    showToast(`Copied: ${text}`);
-  }
-}
-
-let toastTimer = null;
-function showToast(msg){
-  toast.textContent = msg;
-  toast.style.opacity = "1";
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(()=>{ toast.style.opacity="0"; }, 2200);
-} */
-
-// $("#copyTag").addEventListener("click", ()=>copyText(TAG));
-
-// ---------- Fake lively counters (subtle, optional) ----------
-/* const onlineNow = $("#onlineNow");
-const members = $("#members");
-
-function wiggleCounters(){
-  const baseOnline = 133;
-  const baseMembers = 2657;
-
-  const o = baseOnline + Math.floor(Math.random()*6) - 2;   // small jitter
-  const m = baseMembers + Math.floor(Math.random()*4) - 1;
-
-  onlineNow.textContent = Math.max(0, o);
-  members.textContent = Math.max(0, m);
-}
-wiggleCounters();
-setInterval(wiggleCounters, 6000); */
-
-
 // ---------- Party theme generator ----------
 const themes = [
   "Moonlit Masquerade",
