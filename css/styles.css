@@ -278,6 +278,11 @@ section {
     position: sticky;
     top: 30px;
 } */
+
+.img-icon {
+    height: 1.2em;
+    vertical-align: middle;
+}
 .card::before{
   content:"";
   position:absolute; inset:0;
