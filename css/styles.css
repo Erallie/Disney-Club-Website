@@ -307,8 +307,13 @@ h2 {
   font-weight:800;
   font-size: 20px;
 }
-.lead{
+.lead:not(p) {
   margin: 0;
+  color: rgba(234,242,255,.86);
+  line-height:1.6;
+}
+p.lead {
+  margin: 0.5em 0;
   color: rgba(234,242,255,.86);
   line-height:1.6;
 }
