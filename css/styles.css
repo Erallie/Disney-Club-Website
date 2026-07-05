@@ -34,11 +34,6 @@ body{
   overflow-x:hidden;
 }
 
-p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 a {
     color: #7176ff;
     text-decoration: none;
