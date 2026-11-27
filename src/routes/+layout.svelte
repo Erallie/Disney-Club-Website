@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
+    import type { Snippet } from 'svelte';
     import './styles.css';
     import SparkleBackground from '#lib/SparkleBackground.svelte';
 
-    let { children } = $props();
+    let { children }: { children: Snippet } = $props();
 </script>
 
 <SparkleBackground />

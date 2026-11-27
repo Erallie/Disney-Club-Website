@@ -1,5 +1,13 @@
-<script>
-    let { icon, title, children } = $props();
+<script lang="ts">
+    import type { Snippet } from 'svelte';
+
+    interface Props {
+        icon: string;
+        title: string;
+        children: Snippet;
+    }
+
+    let { icon, title, children }: Props = $props();
 </script>
 
 <div class="crown">

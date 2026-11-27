@@ -1,15 +1,26 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
 
-    let canvas;
+    interface Sparkle {
+        x: number;
+        y: number;
+        r: number;
+        a: number;
+        tw: number;
+        sp: number;
+        drift: number;
+        hue: string;
+    }
+
+    let canvas: HTMLCanvasElement;
 
     onMount(() => {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
 
         let W = 0, H = 0, DPR = 1;
-        let animationFrame;
-        function resize(){
+        let animationFrame: number;
+        const resize = () => {
             DPR = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
             W = Math.floor(window.innerWidth);
             H = Math.floor(window.innerHeight);
@@ -18,14 +29,16 @@
             canvas.style.width = W+"px";
             canvas.style.height = H+"px";
             ctx.setTransform(DPR,0,0,DPR,0,0);
-        }
+        };
         window.addEventListener("resize", resize);
         resize();
 
-        const sparkles = [];
+        const sparkles: Sparkle[] = [];
         const N = Math.min(120, Math.floor((W*H)/14000));
 
-        function rnd(a,b){ return a + Math.random()*(b-a); }
+        function rnd(min: number, max: number) {
+            return min + Math.random() * (max - min);
+        }
 
         for(let i=0;i<N;i++){
             sparkles.push({
@@ -40,7 +53,7 @@
             });
         }
 
-        function draw(){
+        const draw = () => {
             ctx.clearRect(0,0,W,H);
 
             for(const s of sparkles){
@@ -74,7 +87,7 @@
             }
 
             animationFrame = requestAnimationFrame(draw);
-        }
+        };
         draw();
 
         return () => {

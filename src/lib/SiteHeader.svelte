@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
-    import { navigation } from '#lib/site-content.js';
+    import { navigation } from '#lib/site-content.ts';
 
-    let { home = false } = $props();
+    let { home = false }: { home?: boolean } = $props();
     let activeSection = $state('overview');
 
     onMount(() => {

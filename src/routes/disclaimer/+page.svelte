@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import SiteHeader from '#lib/SiteHeader.svelte';
     import SiteFooter from '#lib/SiteFooter.svelte';
 </script>

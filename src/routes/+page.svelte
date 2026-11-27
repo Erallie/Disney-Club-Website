@@ -1,22 +1,22 @@
-<script>
+<script lang="ts">
     import { tick } from 'svelte';
     import SiteHeader from '#lib/SiteHeader.svelte';
     import SiteFooter from '#lib/SiteFooter.svelte';
     import ExpectationCard from '#lib/ExpectationCard.svelte';
     import EventRule from '#lib/EventRule.svelte';
     import GalleryPhoto from '#lib/GalleryPhoto.svelte';
-    import { gallery } from '#lib/site-content.js';
+    import { gallery, type GalleryEntry } from '#lib/site-content.ts';
 
-    let dialog;
-    let selectedPhoto = $state(null);
+    let dialog: HTMLDialogElement;
+    let selectedPhoto = $state<GalleryEntry | null>(null);
 
-    async function openPhoto(photo) {
+    async function openPhoto(photo: GalleryEntry) {
         selectedPhoto = photo;
         await tick();
         dialog.showModal();
     }
 
-    function dismissFromBackdrop(event) {
+    function dismissFromBackdrop(event: PointerEvent) {
         if (event.target === dialog) dialog.close();
     }
 
@@ -195,7 +195,22 @@
             </form>
         </div>
         {#if selectedPhoto}
-            <div class="modalImg"><img alt={selectedPhoto.caption} src={selectedPhoto.src}></div>
+            <!-- svelte-ignore a11y_no_noninteractive_tabindex (the scrolling region needs keyboard focus) -->
+            <div class="modalBody" role="region" aria-label="Gallery photo and links" tabindex="0">
+                <div class="modalImg">
+                    <img alt={selectedPhoto.caption} src={selectedPhoto.src}>
+                </div>
+                {#if selectedPhoto.discordThreads?.length}
+                    <section class="modalLinks" aria-labelledby="galleryDiscordTitle">
+                        <h2 id="galleryDiscordTitle">More photos on Discord</h2>
+                        <ul>
+                            {#each selectedPhoto.discordThreads as thread}
+                                <li><a href={thread.url} target="_blank" rel="noopener">{thread.label}</a></li>
+                            {/each}
+                        </ul>
+                    </section>
+                {/if}
+            </div>
         {/if}
     </div>
 </dialog>

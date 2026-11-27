@@ -1,5 +1,13 @@
-<script>
-    let { number, title, children } = $props();
+<script lang="ts">
+    import type { Snippet } from 'svelte';
+
+    interface Props {
+        number: number;
+        title: string;
+        children: Snippet;
+    }
+
+    let { number, title, children }: Props = $props();
 </script>
 
 <div class="stat">
