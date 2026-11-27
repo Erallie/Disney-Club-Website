@@ -34,17 +34,17 @@
     <meta property="og:url" content="https://disney.gozarproductions.com" />
     <meta property="og:site_name" content="The Disney Club" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://disney.gozarproductions.com/files/website-preview.webp" />
-    <meta property="og:image:width" content="1919" />
-    <meta property="og:image:height" content="719" />
-    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image" content="https://disney.gozarproductions.com/files/website-preview-new.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="960" />
+    <meta property="og:image:type" content="image/jpeg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ErikaGozar" />
     <meta name="twitter:creator" content="@ErikaGozar" />
     <meta name="twitter:title" content="The Disney Club" />
     <meta name="twitter:description" content="The Disney Club is a VRChat group where we hang out and lose glass slippers which nobody can find. Join us for lavish parties with beautiful music, breathtaking performances, and a new King and Queen announced each time. Get ready to experience some Disney Magic!" />
-    <meta name="twitter:image" content="https://disney.gozarproductions.com/files/website-preview-x.webp" />
+    <meta name="twitter:image" content="https://disney.gozarproductions.com/files/website-preview-new-x.webp" />
 </svelte:head>
 
 <SiteHeader home />
