@@ -614,25 +614,53 @@ p.lead {
 }
 
 .modalLinks{
-    padding:16px 18px 20px;
-    border-top:1px solid var(--line);
+    padding:clamp(16px, 3vw, 28px);
+    border-top:1px solid rgba(255,217,145,.24);
+    background:radial-gradient(ellipse at top left, rgba(124,99,192,.20), transparent 70%), #0d1224;
 }
 .modalLinks h2{
     margin:0;
-    font-family:Cinzel, serif;
-    font-size:1rem;
+    color:var(--gold);
+    font:600 clamp(1rem, 2.5vw, 1.25rem)/1.4 Cinzel, Georgia, serif;
 }
 .modalLinks ul{
-    margin:10px 0 0;
-    padding-inline-start:1.25rem;
-}
-.modalLinks li + li{
-    margin-top:8px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap:10px;
+    margin:14px 0 0;
+    padding:0;
+    list-style:none;
 }
 .modalLinks a{
-    color:var(--cyan);
-    text-decoration:underline;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    min-height:48px;
+    height:100%;
+    padding:10px 14px;
+    border:1px solid rgba(207,216,255,.20);
+    border-radius:14px;
+    background:linear-gradient(120deg, rgba(162,135,227,.15), rgba(255,255,255,.04));
+    color:var(--text);
+    font:600 .875rem/1.45 Cinzel, Georgia, serif;
     overflow-wrap:anywhere;
+}
+.modalLinks a:hover,
+.modalLinks a:focus-visible{
+    border-color:rgba(255,217,145,.65);
+    background:linear-gradient(120deg, rgba(162,135,227,.24), rgba(255,217,145,.08));
+    color:var(--gold);
+    text-decoration:none;
+}
+.modalLinks a:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:2px;
+}
+.modalLinks .threadArrow{
+    flex:none;
+    color:var(--gold);
+    font:600 1rem/1 Inter, system-ui, sans-serif;
 }
 
 iframe {

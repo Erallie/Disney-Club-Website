@@ -203,9 +203,14 @@
                 {#if selectedPhoto.discordThreads?.length}
                     <section class="modalLinks" aria-labelledby="galleryDiscordTitle">
                         <h2 id="galleryDiscordTitle">More photos on Discord</h2>
-                        <ul>
+                        <ul role="list">
                             {#each selectedPhoto.discordThreads as thread}
-                                <li><a href={thread.url} target="_blank" rel="noopener">{thread.label}</a></li>
+                                <li>
+                                    <a href={thread.url} target="_blank" rel="noopener">
+                                        <span>{thread.label}</span>
+                                        <span class="threadArrow" aria-hidden="true">↗</span>
+                                    </a>
+                                </li>
                             {/each}
                         </ul>
                     </section>
